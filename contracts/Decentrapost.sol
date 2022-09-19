@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.11;
+pragma solidity ^0.8.14;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -20,7 +20,7 @@ contract Decentrapost is ERC721, ERC721URIStorage, Ownable {
         string memory name_,
         string memory symbol_,
         uint256 fees_
-    ) ERC721(name_, symbol_){
+    ) ERC721(name_, symbol_) {
         fees = fees_;
     }
 
